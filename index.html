@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -216,13 +216,36 @@ svg text{font-family:var(--f)}
   <div class="foot">tasq<b>.</b>ai</div><div class="pg"></div>
 </section>
 
+<section class="slide light" data-title="Executive summary">
+  <div class="eyebrow">Customer example · 3-layer labeling</div>
+  <h2 style="top:100px">How we labeled robot movement <span class="o">in three layers.</span></h2>
+  <div style="position:absolute;left:88px;top:170px;width:1424px;display:flex;gap:14px;align-items:center;font:500 13px var(--m);letter-spacing:.12em;text-transform:uppercase">
+    <span style="color:var(--soft)">One real episode from a customer project:</span>
+    <span style="border:1px solid var(--ink);border-radius:999px;padding:9px 16px">L3 · Task</span><span class="o">→</span>
+    <span style="border:1px solid var(--ink);border-radius:999px;padding:9px 16px">L2 · Sub-task</span><span class="o">→</span>
+    <span style="border:1px solid var(--o);color:var(--o);border-radius:999px;padding:9px 16px">L1 · Atomic action</span>
+  </div>
+  <div style="position:absolute;left:0;top:0;width:1600px;height:900px;transform-origin:0 0;transform:translate(144px,200px) scale(.82)">
+  <svg id="fj" style="position:absolute;left:88px;top:200px" width="1424" height="480"></svg>
+  <div style="position:absolute;left:88px;top:700px;display:flex;gap:12px;align-items:center">
+    <button class="btn" id="fjPlay">▶ Play</button><button class="btn ghost" id="fjReset">Reset</button>
+    <span id="fjPhase" class="mono" style="font-size:12px;letter-spacing:.14em;color:var(--o);margin-left:14px;text-transform:uppercase"></span>
+  </div>
+  </div>
+  <div id="fjAdv" style="position:absolute;left:323px;top:505px;width:1050px;opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s;pointer-events:none">
+    <div class="mono" style="font-size:12px;letter-spacing:.16em;color:var(--o)">⑦ WHY IT WORKS</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:14px"><div class="card" style="padding:22px 26px"><div style="display:flex;align-items:baseline;gap:12px"><span class="mono o" style="font-size:13px">01</span><span style="font-size:28px;font-weight:800;letter-spacing:-.02em">High scale</span><span style="font-size:15px;color:var(--mut)">faster, at any volume</span></div><ul style="list-style:none;margin-top:10px;font-size:15.5px;line-height:1.4;color:var(--ink)"><li style="margin:7px 0;padding-left:24px;position:relative"><span class="o" style="position:absolute;left:0;font-weight:800">→</span>Parallel annotation on context-based split episodes</li><li style="margin:7px 0;padding-left:24px;position:relative"><span class="o" style="position:absolute;left:0;font-weight:800">→</span>Reaches a large pool of annotators at once</li><li style="margin:7px 0;padding-left:24px;position:relative"><span class="o" style="position:absolute;left:0;font-weight:800">→</span>Models draft first — people review and fix</li></ul></div><div class="card" style="padding:22px 26px"><div style="display:flex;align-items:baseline;gap:12px"><span class="mono o" style="font-size:13px">02</span><span style="font-size:28px;font-weight:800;letter-spacing:-.02em">High accuracy</span><span style="font-size:15px;color:var(--mut)">built into every step</span></div><ul style="list-style:none;margin-top:10px;font-size:15.5px;line-height:1.4;color:var(--ink)"><li style="margin:7px 0;padding-left:24px;position:relative"><span class="o" style="position:absolute;left:0;font-weight:800">→</span>Automatic quality corrections</li><li style="margin:7px 0;padding-left:24px;position:relative"><span class="o" style="position:absolute;left:0;font-weight:800">→</span>Multiple rounds of human review and fixes</li><li style="margin:7px 0;padding-left:24px;position:relative"><span class="o" style="position:absolute;left:0;font-weight:800">→</span>Short, focused clips — each worker owns seconds, not minutes</li></ul></div>
+    </div>
+  </div>
+  <div class="foot">tasq<b>.</b>ai</div><div class="pg"></div>
+</section>
+
 <section class="slide light" data-title="Video library">
   <div class="eyebrow">Beyond labels · video library</div>
   <h2>Every moment of your data. <span class="o">Searchable.</span></h2>
   <video class="am" data-media="lib" muted loop playsinline style="position:absolute;left:88px;top:215px;width:1000px;height:567px;border-radius:14px;background:#0A0A0B;object-fit:cover;box-shadow:0 18px 50px rgba(0,0,0,.18)"></video>
   <div style="position:absolute;left:1130px;top:240px;width:382px">
-    <div class="o" style="font-size:92px;font-weight:800;letter-spacing:-.03em;line-height:1">7,328</div>
-    <div style="font-size:22px;color:var(--mut);margin-top:8px">moments indexed</div>
+    <div style="font-size:52px;font-weight:800;letter-spacing:-.02em;line-height:1.05">Every moment <span class="o">indexed</span></div>
     <div style="margin-top:56px;display:flex;flex-direction:column;gap:22px;font-size:22px;font-weight:700">
       <div><span class="o">→</span> Search by motion, object, task</div>
       <div><span class="o">→</span> Find look-alikes across episodes</div>
